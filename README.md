@@ -6,17 +6,18 @@ Foco do curso AngularJs + Ionic
 
 **Inicio**
 
-***Criar app***
+**Criar app**
 
 Para criar a plicação utilize o comando:
 
 ionic start nome-da-sua-aplicação blank --type ionic1
 
-***Rodar app***
+**Rodar app**
 
 ionic serve
 
-***Projeto inicial***
+**Projeto inicial**
+
 Comandos:
 
 ionic start Futebol sidemenu --type ionic1
