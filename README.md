@@ -14,7 +14,7 @@ https://ionicframework.com/getting-started/
 
 Para criar a plicação utilize o comando:
 
-ionic start nome-da-sua-aplicação blank --type ionic1
+***ionic start nome-da-sua-aplicação blank --type ionic1***
 
 **Rodar app**
 
