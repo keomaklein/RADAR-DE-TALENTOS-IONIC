@@ -6,6 +6,10 @@ Foco do curso AngularJs + Ionic
 
 **Inicio**
 
+**Documentação Ionic1**
+
+https://ionicframework.com/getting-started/
+
 **Criar app**
 
 Para criar a plicação utilize o comando:
