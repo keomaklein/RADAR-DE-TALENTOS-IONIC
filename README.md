@@ -4,8 +4,13 @@ Aplicação desenvolvida no projeto Radar de Talentos, curso ministrado pela Aut
 
 Foco do curso AngularJs + Ionic
 
-***Inicio***
+**Inicio**
+
+***Criar app***
+
 Para criar a plicação utilize o comando:
 
 ionic start nome-da-sua-aplicação blank --type ionic1
 
+***Rodar app***
+ionic serve
