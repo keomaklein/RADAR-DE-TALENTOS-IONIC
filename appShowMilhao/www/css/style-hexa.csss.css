@@ -9,7 +9,7 @@ body, .scroll-content {
 }
 .item-content {
     background: none !important;
-    background-color: rgba(0, 0, 0, 0.4) !important;
+    background-color: rgba(0, 0, 0, 0.4) !important; 
     margin: 5px;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.2) !important;
@@ -68,7 +68,7 @@ body, .scroll-content {
 }
 .card-dicas {
     margin-bottom: 100px;
-}
+} 
 
 .button-balanced, .button-stable {
     border-radius: 15px;
