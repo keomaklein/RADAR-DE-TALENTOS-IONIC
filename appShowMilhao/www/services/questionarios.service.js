@@ -33,6 +33,7 @@
             return $http.get('api/questoes.json')
                        .then(function(resposta) {
                             service.questoes = $filter('filter')(resposta.data, {codigoQuestionario:codigoQuestionario});
+
                         });
         }
     }

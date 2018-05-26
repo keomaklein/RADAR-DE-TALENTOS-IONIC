@@ -1,20 +1,17 @@
-<ion-view view-title="Questões">
+<ion-view view-title="{{ vm.questionario.titulo }}">
     <ion-content>
         <div class="descricao">
             Sua Pontuação
             <br />(Até 999 Pontos)
         </div>
 
-        <div class="pontuacao"> 999 </div>
+        <div class="pontuacao"> {{ vm.questionario.pontuacaoTotal }} </div>
 
         <div class="card">
             <div class="item item-text-wrap">
-                <h2>Qual seleção não vai pra copa da russia de 2018?</h2>
-                <ion-list>
-                    <ion-radio ng-model="x" ng-value="'A'">Brasil</ion-radio>
-                    <ion-radio ng-model="x" ng-value="'B'">Alemanha</ion-radio>
-                    <ion-radio ng-model="x" ng-value="'C'">Italia</ion-radio>
-                    <ion-radio ng-model="x" ng-value="'D'">Costa Rica</ion-radio>
+                <h2>{{ vm.questaoCorrente.codigo }}) {{ vm.questaoCorrente.questao }}</h2>
+                <ion-list >
+                    <ion-radio ng-repeat="questao in vm.questaoCorrente.opcoes track by questao.letra" ng-model="x" ng-value="'{{ questao.letra }}'">{{ questao.letra }}) {{ questao.descricao }}</ion-radio>
                 </ion-list>
             </div>
         </div>

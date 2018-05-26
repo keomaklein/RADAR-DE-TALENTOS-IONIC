@@ -1,19 +1,34 @@
 (function () {
-    function QuestoesController(QuestionariosService) {
+    function QuestoesController($stateParams, QuestionariosService) {
         // declaração de variaveis
         var vm = this;
+        var codigoQuestionario = $stateParams.codigo;
+        vm.questionario = {};
         vm.questoes = [];
+        vm.indice = 0;
+        vm.questaoCorrente = {};
 
         // ao inciar
+        recuperarQuestionarioDetalhe();        
         recuperarQuestoes();
 
         // resgistradas no escopo
         // funções
-        function recuperarQuestoes() {
-            QuestionariosService.recuperarQuestoes().then(function() {
-                vm.questoes = QuestionariosService.questoes;
-            });
+        function recuperarQuestionarioDetalhe() {
+            QuestionariosService.recuperarDetalhe(codigoQuestionario)
+                                .then(function() {
+                                    vm.questionario = QuestionariosService.questionario;
+                                });
         }
+
+        function recuperarQuestoes() {
+            QuestionariosService.recuperarQuestoes(codigoQuestionario)
+                                .then(function() {
+                                    vm.questoes = QuestionariosService.questoes;
+                                    vm.questaoCorrente = vm.questoes[vm.indice];
+                                });
+        }
+
 
     }
 
